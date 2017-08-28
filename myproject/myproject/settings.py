@@ -20,10 +20,10 @@ APPLICATION_DIR = os.path.dirname(globals()['__file__'])
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 's$mji#il3e6in3c!9%o#xeonehagflj^)j*my(5e)gxei2k$2q'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['138.68.157.110']
 
