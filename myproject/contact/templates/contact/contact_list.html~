@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Contacts</h1>
+
+<ul>
+  <li>One two three </li>
+  <li> sdf </li>
+  {% endblock %}
+</ul>

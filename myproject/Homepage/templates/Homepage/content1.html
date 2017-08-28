@@ -1,0 +1,139 @@
+<html>
+  <head>
+    <title>Comparison of the Umbrella Sampling and Steered Molecular Dynamics Methods</title>
+    <!-- Need to add additional libraries here -->
+    <meta charset="utf-8">  
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'frame/css/layout.css' %}" type="text/css" media="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="{% static 'frame/js/jquery-1.8.2.min.js' %}"></script>
+    <script src="{% static 'frame/js/cufon-yui.js' %}"></script>
+    <script src="{% static 'frame/js/cufon-replace.js' %}"></script>
+    <script src="{% static 'frame/js/Myriad_Pro_300.font.js' %}"></script>
+    <script src="{% static 'frame/js/Myriad_Pro_400.font.js' %}"></script> 
+    <script src="{% static 'frame/js/d3.v3.min.js' %}"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>      
+    <!-- additional css stylesheets -->    
+    <style>
+      
+      body {
+      font: 12px sans-serif;
+      }
+      
+      .axis path,
+      .axis line {
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges;
+      }
+      
+      .dot {
+      stroke: #000;
+      
+      }     
+    </style>
+  </head>
+  
+  <a href = "http://www.visitlondon.com/">
+  <img src = "{% static 'frame/images/aw5T3Np.jpg' %}" align="middle" height = "300" width = "400"/> 
+  <br />
+  </a>
+
+  <body bgccolor = "#aaddff">
+    <script language = "javascript" type = "text/javascript">
+      document.write("<font-color= 'green'> This document was last modified on " + document.lastModified + "</font>");
+</script>
+
+<br />
+<br />
+
+<h1>Comparison of Umbrella Sampling and Steered Molecular Dynamics for computing free</h1>
+free energy profiles of toluene and fullerene through lipid bilayers</h1>
+<strong> Cloud Observations </strong>
+<h2>Introduction </h2>
+<p>
+  <!-- This is the first Becky correction suggested -->
+  The motivation for studying lipid bilayers using computer simulations should 
+  
+  The properties of lipid bilayers in vivo has been a subject of much interest due to the large
+  variety of structures it can form.
+  
+  The factors that affect the macrostructure and stability of the bilayer are complex, involving
+  the chemical composition of the head and tailgroups of 
+</p>
+<div>
+Previous work done by Bastug and Kuyucak 
+  
+</div>
+
+
+
+<br />
+<form>
+  <table>
+    <tr>
+      <td><strong>High</strong></td>
+      <td>
+	<input type = "checkbox" name="high"
+	       value = "Cirrus" /> Cirrus </td>
+      <td>
+	      <input type = "checkbox" name="high"
+		     value = "Cirrocululus" /> Cirrocumulus </td>
+      <td>
+	<input type = "checkbox" name = "high"
+	       value = "Cirrostratus" />  Cirrostratus </td></tr>
+    <tr>
+	    <td colspan = "4"> <hr  noshade color = "black" />
+    </td></tr>
+    <tr>
+      <td> <strong>Middle</strong> </td>
+      <td>
+	<input type = "checkbox" name = "mid"
+	       value = "Altostratus" /> Altostratus </td>
+      <td>
+	      <input type = "checkbox" name = "mid"
+		     value = "Altocumlus" /> Altocumulus </td></tr>
+    <tr>
+      <td colspan ="4"><hr noshale color = "black" />
+    </td></tr>
+  </table>
+      </form>
+
+{% if research_list %}
+<ul>
+  {% for research in research_list %}
+	<li><a href="/frame/{{ question.id }}/research">{{ research.Journal_title }}</a></li>
+	{% endfor %}
+</ul>
+{% else %}
+    <p> No research are avaliable </p>
+    {% endif %}    
+<p>
+  The table below shows some radon levels measured in residences. <br /> For values greater than or equal
+      to 4 pCi/L, action should be taken <br /> to reduce the concentration of radon gas. For values greater
+  than or <br /> equal to 3 pCi/L, retesting is recommended .
+</p>
+
+<script type="text/javascript">
+  var dataset = [5, 10, 15, 20, 25, 3 ,4 ,5, 61 ,2];
+  d3.select("body").select("div")
+  .data(dataset)
+  .enter()
+  .append("div")
+  .attr("class", "bar")
+      .style("height", function(d) {
+  var barHeight = d * 5;
+  return barHeight + "px";
+  });
+</script>
+
+
+
+
+</body>
+</html>
+
+	      

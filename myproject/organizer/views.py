@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+from __future__ import unicode_literals
+
+from django.shortcuts import render
+from .models import Tag
+
+def homepage(request):
+    tag_list = Tag.objects.all()
+    template = loader.get_template(
+        'organizer/tag_list.html')
+    context = Context({'tag_list': tag_list})
+    output = template.render(context)
+    return HttpResponse(output)
+
+def tag_detail(request):
+    # slug = ?
+    tag = Tag.objects.get(slug__iexact=slug)
+    template = loader.get_template(
+        'organizer/tag_detail.html'
+    )
